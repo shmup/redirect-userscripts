@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Youtube to Invidious Redirector
-// @namespace    https://codeberg.org/shmup/junk-trove
+// @namespace    https://github.com/shmup/redirect-userscripts
 // @version      1.0
 // @description  Redirect youtube to invidious, a free and open source alternative
 // @author       shmup
@@ -14,6 +14,7 @@
 /**
  * Privacy focused. Ethically designed. No Accounts. Multilingual. No Ads.
  *
+ * https://invidious.io/
  * https://github.com/iv-org/invidious
  **/
 

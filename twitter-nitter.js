@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Twitter to Nitter Redirector
-// @namespace    https://codeberg.org/shmup/junk-trove
+// @namespace    https://github.com/shmup/redirect-userscripts
 // @version      1.0
 // @description  Redirect twitter to nitter, a free and open source alternative
 // @author       shmup
@@ -14,7 +14,9 @@
 
 /**
  * Nitter is a free and open source alternative Twitter front-end focused on privacy and performance.
- * The source is available on GitHub at https://github.com/zedeus/nitter
+ *
+ * https://nitter.net/about
+ * https://github.com/zedeus/nitter
  **/
 
 (function () {

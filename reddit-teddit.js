@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Reddit to Teddit Redirector
-// @namespace    https://codeberg.org/shmup/junk-trove
+// @namespace    https://github.com/shmup/redirect-userscripts
 // @version      1.0
 // @description  Redirect reddit to teddit, a free and open source alternative focused on privacy. Use with something like https://violentmonkey.github.io
 // @author       shmup
@@ -15,7 +15,9 @@
 /**
  * Teddit is a free and open source alternative Reddit front-end focused on
  * privacy. Teddit doesn't require you to have JavaScript enabled in your browser.
- * The source is available on Codeberg at https://codeberg.org/teddit/teddit.
+ *
+ * https://teddit.net/about
+ * https://codeberg.org/teddit/teddit
  **/
 
 (function () {
