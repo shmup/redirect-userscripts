@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram to Bibliogram Redirector
 // @namespace    https://github.com/shmup/redirect-userscripts
-// @version      1.0
+// @version      1.1
 // @description  Redirect Instagram to Bibliogram, a free and open source alternative
 // @author       shmup
 // @match        https://www.instagram.com/*
@@ -19,7 +19,7 @@
 
  * Bibliogram does not allow you to anonymously post, like, comment, follow, or
  * view private profiles. It does not preserve deleted posts.
- *
+
  * Mirrors are here, you'd have to update the URL below.
  * https://git.sr.ht/~cadence/bibliogram-docs/tree/master/docs/Instances.md
  *
@@ -28,6 +28,16 @@
  **/
 
 (function () {
-  top.location.hostname = "bibliogram.art";
+  'use strict';
+
+  const preferredBibliogramInstance = 'bibliogram.art';
+
+  const redirectToBibliogram = () => {
+    const bibliogramURL = new URL(window.location.href);
+    bibliogramURL.hostname = preferredBibliogramInstance;
+    window.location.replace(bibliogramURL.toString());
+  };
+
+  redirectToBibliogram();
 })();
 

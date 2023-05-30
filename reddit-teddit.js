@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Reddit to Teddit Redirector
 // @namespace    https://github.com/shmup/redirect-userscripts
-// @version      1.0
+// @version      1.1
 // @description  Redirect reddit to teddit, a free and open source alternative focused on privacy. Use with something like https://violentmonkey.github.io
 // @author       shmup
 // @match        https://www.reddit.com/*
@@ -21,6 +21,16 @@
  **/
 
 (function () {
-  top.location.hostname = "teddit.net";
+  'use strict';
+
+  const preferredTedditInstance = 'teddit.net';
+
+  const redirectToTeddit = () => {
+    const tedditURL = new URL(window.location.href);
+    tedditURL.hostname = preferredTedditInstance;
+    window.location.replace(tedditURL.toString());
+  };
+
+  redirectToTeddit();
 })();
 
