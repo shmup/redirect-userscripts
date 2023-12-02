@@ -7,6 +7,7 @@
 // @match        https://www.twitter.com/*
 // @match        https://twitter.com/*
 // @match        https://mobile.twitter.com/*
+// @match        https://x.com/*
 // @grant        none
 // @run-at       document-start
 // @license      Unlicense
