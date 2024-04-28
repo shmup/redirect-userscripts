@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Instagram to Bibliogram Redirector
 // @namespace    https://github.com/shmup/redirect-userscripts
-// @version      1.1
+// @version      1.2
 // @description  Redirect Instagram to Bibliogram, a free and open source alternative
 // @author       shmup
 // @match        https://www.instagram.com/*
@@ -27,17 +27,9 @@
  * https://github.com/bmrz2019/bibliogram
  **/
 
-(function () {
-  'use strict';
-
-  const preferredBibliogramInstance = 'bibliogram.art';
-
-  const redirectToBibliogram = () => {
-    const bibliogramURL = new URL(window.location.href);
-    bibliogramURL.hostname = preferredBibliogramInstance;
-    window.location.replace(bibliogramURL.toString());
-  };
-
-  redirectToBibliogram();
+(function() {
+    'use strict';
+    const newURL = new URL(window.location.href);
+    newURL.hostname = 'bibliogram.art';
+    window.location.replace(newURL.toString());
 })();
-

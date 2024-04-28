@@ -18,17 +18,10 @@
  * https://github.com/iv-org/invidious
  **/
 
-(function () {
-  'use strict';
-
-  const preferredInvidiousInstance = 'yewtu.be';
-
-  const redirectToInvidious = () => {
-    const invidiousURL = new URL(window.location.href);
-    invidiousURL.hostname = preferredInvidiousInstance;
-    window.location.replace(invidiousURL.toString());
-  };
-
-  redirectToInvidious();
+(function() {
+    'use strict';
+    const newURL = new URL(window.location.href);
+    newURL.hostname = 'yewtu.be';
+    window.location.replace(newURL.toString());
 })();
 
