@@ -13,9 +13,3 @@ I like to install these with ![violentmonkey](https://user-images.githubusercont
     * if the instance goes down, you can update script with one from https://github.com/zedeus/nitter/wiki/Instances#public
  - `youtube-invidious.js` redirects to (i.e.) https://yewtu.be/watch?v=6wchqfLA5d0
     * install: https://greasyfork.org/en/scripts/450007-youtube-to-invidious-redirector
-
-
- **Currently not working, thanks Mark**
-
- - `instagram-bibliogram.js` redirects to https://instagram.com
-    * install: https://greasyfork.org/en/scripts/450014-instagram-to-bibliogram-redirector
