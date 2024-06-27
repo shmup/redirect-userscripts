@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Twitter to Nitter Redirector
 // @namespace    https://github.com/shmup/redirect-userscripts
-// @version      1.2
+// @version      1.3
 // @description  Redirect Twitter to Nitter, a free and open source alternative
 // @author       shmup
 // @match        https://www.twitter.com/*
@@ -20,10 +20,15 @@
  * https://github.com/zedeus/nitter
  **/
 
+// NOTE - you may need to udpate the instance:
+// https://github.com/zedeus/nitter/wiki/Instances#public
+
+const nitterInstance = "xcancel.com";
+
 (function() {
     'use strict';
     const newURL = new URL(window.location.href);
-    newURL.hostname = 'nitter.net';
+    newURL.hostname = nitterInstance;
     window.location.replace(newURL.toString());
 })();
 
